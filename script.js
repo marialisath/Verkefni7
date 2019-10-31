@@ -18,10 +18,10 @@ function start() {
 function play() {
   const random = randomNumber(1, 100);
   let guess = 1;
-  let result = prompt("Gískaðu á tölu sem er á milli 0 og 100");
+  let result = prompt("Giskaðu á tölu sem er á milli 0 og 100");
   while (result != random) {
     alert(getResponse(parseGuess(result), random));
-    result = prompt("Gískaðu á tölu sem er á milli 0 og 100");
+    result = prompt("Giskaðu á tölu sem er á milli 0 og 100");
     guess++;
   }
   alert(getResponse(result, random));
